@@ -1,6 +1,6 @@
 import pprint
 pokemon = {} #Empty dictionary for pokemon to be stored
-#test if commit worked
+#test if commit2 worked
 
 def FindType(): #Function used to find specific types of pokemon
     findtype = input("what type are you looking for?")
