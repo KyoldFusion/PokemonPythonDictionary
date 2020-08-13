@@ -1,20 +1,21 @@
 import pprint
 pokemon = {} #Empty dictionary for pokemon to be stored
-#test if commit2 worked
+        
+Types = ('Normal', 'Fire', 'Water', 'Grass', 'Electric', 'Ice', 'Fighting', 'Poison', 'Ground', 'Flying', 'Psychic', 'Bug', 'Rock', 'Ghost', 'Dark', 'Dragon', 'Steel', 'Fairy') # Set of the different pokemon types
 
-def FindType(): #Function used to find specific types of pokemon
-    findtype = input("what type are you looking for?")
+def FindType(arg): #Function used to find specific types of pokemon
+    arg = input("what type are you looking for?")
     print()
     for i in pokemon:
-        if pokemon[i]['Type'] == findtype: #Used to search for pokemon in pokedex on their type goes through the count of pokemon
-         pprint.pprint(pokemon[i])
+        if pokemon[i]['Type'] == arg: #Used to search for pokemon in pokedex on their type goes through the count of pokemon
+         pprint.pprint(pokemon[i]['Name'])
          print()
-        if pokemon[i]['Type2'] == findtype: #Used to search for pokemon in pokedex on their type goes through the count of pokemons second typing
-         pprint.pprint(pokemon[i])
+        if pokemon[i]['Type2'] == arg: #Used to search for pokemon in pokedex on their type goes through the count of pokemons second typing
+         pprint.pprint(pokemon[i]['Name'])
          print()
 
 
-Types = ['Normal', 'Fire', 'Water', 'Grass', 'Electric', 'Ice', 'Fighting', 'Poison', 'Ground', 'Flying', 'Psychic', 'Bug', 'Rock', 'Ghost', 'Dark', 'Dragon', 'Steel', 'Fairy'] # Set of the different pokemon types
+
 pokemon['001'] = {'dex': '001', # Pokedex Number
                         'Name': 'Bulbasaur', #Pokemon Name
                         'Type': 'Grass', #Pokemon Type1
@@ -615,4 +616,310 @@ pokemon['100'] = {'dex': '100',
                         'Type2': '',
                         'Mega': 'N'}
 
-FindType()
+pokemon['101'] = {'dex': '101',
+                        'Name': 'Electrode',
+                        'Type': 'Electric',
+                        'Type2': '',
+                        'Mega': 'N'}
+
+pokemon['102'] = {'dex': '102',
+                        'Name': 'Exeggcute',
+                        'Type': 'Grass',
+                        'Type2': 'Psychic',
+                        'Mega': 'N'}
+
+pokemon['103'] = {'dex': '103',
+                        'Name': 'Exeggutor',
+                        'Type': 'Grass',
+                        'Type2': 'Psychic',
+                        'Mega': 'N'}
+
+pokemon['104'] = {'dex': '104',
+                        'Name': 'Cubone',
+                        'Type': 'Ground',
+                        'Type2': '',
+                        'Mega': 'N'}
+
+pokemon['105'] = {'dex': '105',
+                        'Name': 'Marowak',
+                        'Type': 'Ground',
+                        'Type2': '',
+                        'Mega': 'N'}
+
+pokemon['106'] = {'dex': '106',
+                        'Name': 'Hitmonlee',
+                        'Type': 'EFighting',
+                        'Type2': '',
+                        'Mega': 'N'}
+
+pokemon['107'] = {'dex': '107',
+                        'Name': 'Hitmonchan',
+                        'Type': 'Fighting',
+                        'Type2': '',
+                        'Mega': 'N'}
+
+pokemon['108'] = {'dex': '108',
+                        'Name': 'Lickitung',
+                        'Type': 'Normal',
+                        'Type2': '',
+                        'Mega': 'N'}
+
+pokemon['109'] = {'dex': '109',
+                        'Name': 'Koffing',
+                        'Type': 'Poison',
+                        'Type2': '',
+                        'Mega': 'N'}
+
+pokemon['110'] = {'dex': '110',
+                        'Name': 'Weezing',
+                        'Type': 'Poison',
+                        'Type2': '',
+                        'Mega': 'N'}
+
+pokemon['111'] = {'dex': '111',
+                        'Name': 'Rhyhorn',
+                        'Type': 'Ground',
+                        'Type2': 'Rock',
+                        'Mega': 'N'}
+
+pokemon['112'] = {'dex': '112',
+                        'Name': 'Rhydon',
+                        'Type': 'Ground',
+                        'Type2': 'Rock',
+                        'Mega': 'N'}
+
+pokemon['113'] = {'dex': '113',
+                        'Name': 'Chansey',
+                        'Type': 'Normal',
+                        'Type2': '',
+                        'Mega': 'N'}
+
+pokemon['114'] = {'dex': '114',
+                        'Name': 'Tangela',
+                        'Type': 'Grass',
+                        'Type2': '',
+                        'Mega': 'N'}
+
+pokemon['115'] = {'dex': '115',
+                        'Name': 'Kangaskhan',
+                        'Type': 'Normal',
+                        'Type2': '',
+                        'Mega': 'Y'}
+
+pokemon['116'] = {'dex': '116',
+                        'Name': 'Horsea',
+                        'Type': 'Water',
+                        'Type2': '',
+                        'Mega': 'N'}
+
+pokemon['117'] = {'dex': '117',
+                        'Name': 'Seadraw',
+                        'Type': 'Water',
+                        'Type2': '',
+                        'Mega': 'N'}
+
+pokemon['118'] = {'dex': '118',
+                        'Name': 'Goldeen',
+                        'Type': 'Water',
+                        'Type2': '',
+                        'Mega': 'N'}
+
+pokemon['119'] = {'dex': '119',
+                        'Name': 'Seaking',
+                        'Type': 'Water',
+                        'Type2': '',
+                        'Mega': 'N'}
+
+pokemon['120'] = {'dex': '120',
+                        'Name': 'Staryu',
+                        'Type': 'Water',
+                        'Type2': '',
+                        'Mega': 'N'}
+
+pokemon['121'] = {'dex': '121',
+                        'Name': 'Starmie',
+                        'Type': 'Water',
+                        'Type2': 'Psychic',
+                        'Mega': 'N'}
+
+pokemon['122'] = {'dex': '122',
+                        'Name': 'Mr-Mime',
+                        'Type': 'Psychic',
+                        'Type2': 'Fairy',
+                        'Mega': 'N'}
+
+pokemon['123'] = {'dex': '123',
+                        'Name': 'Scyther',
+                        'Type': 'Bug',
+                        'Type2': 'Flying',
+                        'Mega': 'N'}
+
+pokemon['124'] = {'dex': '124',
+                        'Name': 'Jynx',
+                        'Type': 'Ice',
+                        'Type2': 'Psychic',
+                        'Mega': 'N'}
+
+pokemon['125'] = {'dex': '125',
+                        'Name': 'Electabuzz',
+                        'Type': 'Electric',
+                        'Type2': '',
+                        'Mega': 'N'}
+
+pokemon['126'] = {'dex': '126',
+                        'Name': 'Magmar',
+                        'Type': 'Fire',
+                        'Type2': '',
+                        'Mega': 'N'}
+
+pokemon['127'] = {'dex': '127',
+                        'Name': 'Pinsir',
+                        'Type': 'Bug',
+                        'Type2': '',
+                        'Mega': 'Y'}
+
+pokemon['128'] = {'dex': '128',
+                        'Name': 'Tauros',
+                        'Type': 'Normal',
+                        'Type2': '',
+                        'Mega': 'N'}
+
+pokemon['129'] = {'dex': '129',
+                        'Name': 'Magikarp',
+                        'Type': 'Water',
+                        'Type2': '',
+                        'Mega': 'N'}
+
+pokemon['130'] = {'dex': '130',
+                        'Name': 'Gyarados',
+                        'Type': 'Water',
+                        'Type2': 'Flying',
+                        'Mega': 'Y'}
+
+pokemon['131'] = {'dex': '131',
+                        'Name': 'Lapras',
+                        'Type': 'Water',
+                        'Type2': 'Ice',
+                        'Mega': 'N'}
+
+pokemon['132'] = {'dex': '132',
+                        'Name': 'Ditto',
+                        'Type': 'Normal',
+                        'Type2': '',
+                        'Mega': 'N'}
+
+pokemon['133'] = {'dex': '133',
+                        'Name': 'Eevee',
+                        'Type': 'Normal',
+                        'Type2': '',
+                        'Mega': 'N'}
+
+pokemon['134'] = {'dex': '134',
+                        'Name': 'Vaporeon',
+                        'Type': 'Water',
+                        'Type2': '',
+                        'Mega': 'N'}
+
+pokemon['135'] = {'dex': '135',
+                        'Name': 'Jolteon',
+                        'Type': 'Electric',
+                        'Type2': '',
+                        'Mega': 'N'}
+
+pokemon['136'] = {'dex': '136',
+                        'Name': 'Flareon',
+                        'Type': 'Fire',
+                        'Type2': '',
+                        'Mega': 'N'}
+
+pokemon['137'] = {'dex': '137',
+                        'Name': 'Porygon',
+                        'Type': 'Normal',
+                        'Type2': '',
+                        'Mega': 'N'}
+
+
+pokemon['138'] = {'dex': '138',
+                        'Name': 'Omanyte',
+                        'Type': 'Rock',
+                        'Type2': 'Water',
+                        'Mega': 'N'}
+
+pokemon['139'] = {'dex': '139',
+                        'Name': 'Omastar',
+                        'Type': 'Rock',
+                        'Type2': 'Water',
+                        'Mega': 'N'}
+
+pokemon['140'] = {'dex': '140',
+                        'Name': 'Kabuto',
+                        'Type': 'Rock',
+                        'Type2': 'Water',
+                        'Mega': 'N'}
+
+pokemon['141'] = {'dex': '141',
+                        'Name': 'Kabutops',
+                        'Type': 'Rock',
+                        'Type2': 'Water',
+                        'Mega': 'N'}
+
+pokemon['142'] = {'dex': '142',
+                        'Name': 'Aerodactyl',
+                        'Type': 'Rock',
+                        'Type2': 'Flying',
+                        'Mega': 'Y'}
+
+pokemon['143'] = {'dex': '143',
+                        'Name': 'Snorlax',
+                        'Type': 'Normal',
+                        'Type2': '',
+                        'Mega': 'N'}
+
+pokemon['144'] = {'dex': '144',
+                        'Name': 'Articuno',
+                        'Type': 'Ice',
+                        'Type2': 'Flying',
+                        'Mega': 'N'}
+
+pokemon['145'] = {'dex': '145',
+                        'Name': 'Zapdos',
+                        'Type': 'Electric',
+                        'Type2': 'Flying',
+                        'Mega': 'N'}
+
+pokemon['146'] = {'dex': '146',
+                        'Name': 'Moltres',
+                        'Type': 'Fire',
+                        'Type2': 'Flying',
+                        'Mega': 'N'}
+
+pokemon['147'] = {'dex': '147',
+                        'Name': 'Dratini',
+                        'Type': 'Dragon',
+                        'Type2': '',
+                        'Mega': 'N'}
+
+pokemon['148'] = {'dex': '148',
+                        'Name': 'Dragonair',
+                        'Type': 'Dragon',
+                        'Type2': '',
+                        'Mega': 'N'}
+
+pokemon['149'] = {'dex': '149',
+                        'Name': 'Dragonite',
+                        'Type': 'Dragon',
+                        'Type2': 'Flying',
+                        'Mega': 'N'}
+                        
+pokemon['150'] = {'dex': '150',
+                        'Name': 'Mewtwo',
+                        'Type': 'Psychic',
+                        'Type2': '',
+                        'Mega': 'Y'}
+
+pokemon['151'] = {'dex': '151',
+                        'Name': 'Mew',
+                        'Type': 'Psychic',
+                        'Type2': '',
+                        'Mega': 'N'}
+FindType(Types)
