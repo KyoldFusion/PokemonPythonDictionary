@@ -14,6 +14,10 @@ def FindType(arg): #Function used to find specific types of pokemon
          pprint.pprint(pokemon[i]['Name'])
          print()
 
+def PokemonSearch():
+    for i in pokemon:
+        print("<Option Value='1'>", pokemon[i]['Name'], '</Option>')
+
 
 
 pokemon['001'] = {'dex': '001', # Pokedex Number
@@ -922,4 +926,5 @@ pokemon['151'] = {'dex': '151',
                         'Type': 'Psychic',
                         'Type2': '',
                         'Mega': 'N'}
-FindType(Types)
+
+PokemonSearch()
